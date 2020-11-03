@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1463" started-at="2020-11-03T16:47:02Z" finished-at="2020-11-03T16:47:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1463" started-at="2020-11-03T16:47:02Z" finished-at="2020-11-03T16:47:04Z">
+      <class name="com.facebook.automation.Facebook">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.facebook.automation.Facebook@6ad5c04e]" name="setup" is-config="true" duration-ms="7473" started-at="2020-11-03T22:16:55Z" finished-at="2020-11-03T22:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="enterDay()[pri:-2, instance:com.facebook.automation.Facebook@6ad5c04e]" name="enterDay" duration-ms="181" started-at="2020-11-03T22:17:03Z" finished-at="2020-11-03T22:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterDay -->
+        <test-method status="PASS" signature="enterMonth()[pri:-1, instance:com.facebook.automation.Facebook@6ad5c04e]" name="enterMonth" duration-ms="269" started-at="2020-11-03T22:17:03Z" finished-at="2020-11-03T22:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterMonth -->
+        <test-method status="PASS" signature="enterYear()[pri:0, instance:com.facebook.automation.Facebook@6ad5c04e]" name="enterYear" duration-ms="323" started-at="2020-11-03T22:17:03Z" finished-at="2020-11-03T22:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterYear -->
+        <test-method status="PASS" signature="selectRadioButton()[pri:0, instance:com.facebook.automation.Facebook@6ad5c04e]" name="selectRadioButton" duration-ms="182" started-at="2020-11-03T22:17:03Z" finished-at="2020-11-03T22:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRadioButton -->
+        <test-method status="PASS" signature="registration()[pri:1, instance:com.facebook.automation.Facebook@6ad5c04e]" name="registration" duration-ms="487" started-at="2020-11-03T22:17:03Z" finished-at="2020-11-03T22:17:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+      </class> <!-- com.facebook.automation.Facebook -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
