@@ -18,8 +18,8 @@ public class Facebook {
 	public static WebDriver driver = null;
 
 	// set up initial environment
-	@Test(priority = 1)
-	public void setup() {
+
+	public  void setup() {
 
 		// set driver exe path
 		System.setProperty("webdriver.chrome.driver",
@@ -40,7 +40,7 @@ public class Facebook {
 
 	// Register for new facebook user using valid first name , last name and
 	// password
-	@Test(priority = 2)
+	
 	public void registration() {
 
 		// locate and set firstname
@@ -72,19 +72,19 @@ public class Facebook {
 
 	}
 
-	@Test(priority = 3)
+	
 	public void enterDay() {
 
 		WebElement day = driver.findElement(By.name("birthday_day"));
 
 		Select objSelect = new Select(day);
 
-		objSelect.selectByIndex(3);
+		objSelect.selectByVisibleText("6");
 
 	}
 
 	// enter month
-	@Test(priority = 3)
+	
 	public void enterMonth() {
 		// locate month
 		WebElement monthLocator = driver.findElement(By.id("month"));
@@ -98,7 +98,7 @@ public class Facebook {
 	}
 
 	// Enter Year
-	@Test(priority = 4)
+
 	public void enterYear() {
 
 		List<WebElement> yearData = driver.findElements(By.xpath("//option[contains(@value,'20')]"));
@@ -108,7 +108,7 @@ public class Facebook {
 	}
 
 	// Select Radio button
-	@Test(priority = 5)
+	
 	public void selectRadioButton() {
 
 		// locate radio button Male and click
@@ -119,6 +119,18 @@ public class Facebook {
 
 		// locate Sign Up button and click
 		// driver.findElement(By.name("websubmit")).click();
+	}
+	
+	@Test
+	public void facebookSignUP(){
+		
+		setup();
+		registration();
+		generateMobileNo();
+		enterDay();
+		enterMonth();
+		enterYear();
+		selectRadioButton();
 	}
 
 }
